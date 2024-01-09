@@ -74,3 +74,39 @@ p a{
     text-align: center;
     font-size: 1.5rem;
 }
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    background-color: rgb(104, 104, 255);
+    border: none;
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .3rem;
+    font-size: 1.3rem;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: .5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.delete,
+.enter {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.delete { width: 100px; }
+.enter { width: 70px; }
+
+.textarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+.upper { text-transform: uppercase; }

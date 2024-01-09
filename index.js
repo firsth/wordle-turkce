@@ -6877,6 +6877,7 @@ let kelimeler = ['bekar','abadi',
 'zülüf',
 ]
 
+const buttons = document.querySelectorAll('.btn')
 
 const state = {
 
@@ -6947,6 +6948,43 @@ function klavyeHareketleri(){
     }
 }
 
+function klavyeHareketleriSanal(){
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tus = btn.innerText;
+            if(tus === 'Enter'){
+                if(state.sutunSayisi === 5){
+                    const kelime = kelimeGetir();
+                    if(kelimeKontrol(kelime)){
+                        yerKontrol(kelime);
+                        state.sutunSayisi = 0;
+                        state.satirSayisi++;
+                    }else{
+                        alert('Kelime bulunamadı');
+                    }
+                }
+            }
+            if(tus === 'Delete'){
+                tusSil();
+            }
+            if(harfKontrol(tus)){
+                harfEkle(tus);
+            }
+    
+            gridGuncelle();
+        })
+        
+    })
+    
+
+}
+
+function harfEkle2(harf){
+    
+    
+    
+}
+
 function kelimeGetir(){
     return state.grid[state.satirSayisi].reduce((onceki, sonraki) => onceki + sonraki);
 }
@@ -6991,7 +7029,9 @@ function harfEkle(harf){
     if(state.sutunSayisi === 5) return;
     state.grid[state.satirSayisi][state.sutunSayisi] = harf;
     state.sutunSayisi++;
+    
 }
+
 
 function tusSil(){
     if(state.sutunSayisi === 0) return;
@@ -7004,8 +7044,7 @@ function main(){
     GridOlustur(oyun);
 
     klavyeHareketleri();
-    
+    klavyeHareketleriSanal();
     
 }
-
 main();
