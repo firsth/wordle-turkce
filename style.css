@@ -26,8 +26,8 @@ body{
 }
 
 .kutu{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border: 1px solid var(--empty);
     margin: 5px;
     color: #fff;
@@ -72,6 +72,7 @@ p a{
     color:#538D4E;
     left:0;
     bottom:0;
+    height:100px;
     width: 100%;
     padding-top: 2rem;
     text-align: center;
@@ -123,7 +124,7 @@ button {
 
     button{
         width: 24px;
-        height: 24px;
+        height: 40px;
         margin: 2px;
         
         font-size: 20px;
