@@ -14,11 +14,7 @@ body{
 #oyun{
     display: grid;
     width: 100%;
-<<<<<<< HEAD
-    height: 600px;
-=======
     height: 550px;
->>>>>>> 67027a9 (görsel düzenlemeler)
     place-items: center;
 }
 
@@ -30,8 +26,8 @@ body{
 }
 
 .kutu{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border: 1px solid var(--empty);
     margin: 5px;
     color: #fff;
@@ -130,12 +126,6 @@ button {
 @media only screen and (max-width: 600px) {
     .kutu{
         width: 50px;
-<<<<<<< HEAD
-        height: 50px;
-    }
-    #oyun{
-        height:450px;
-=======
         height: 60px;
         font-size: 2.2rem;
     }
@@ -146,16 +136,11 @@ button {
 
     .mesaj{
         padding-bottom: 10px;
->>>>>>> 67027a9 (görsel düzenlemeler)
     }
+
     button{
-<<<<<<< HEAD
-        width: 24px;
-        height: 54px;
-=======
         width: 30px;
         height: 40px;
->>>>>>> 67027a9 (görsel düzenlemeler)
         margin: 2px;
         
         font-size: 20px;
