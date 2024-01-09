@@ -110,3 +110,25 @@ button {
 
 
 .upper { text-transform: uppercase; }
+
+
+@media only screen and (max-width: 600px) {
+    .kutu{
+        width: 50px;
+        height: 50px;
+    }
+
+    button{
+        width: 17px;
+        height: 17px;
+        margin: 5px;
+        
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .delete,.enter{
+        width: 30px;
+       
+    }
+  }

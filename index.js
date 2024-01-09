@@ -6964,7 +6964,7 @@ function klavyeHareketleriSanal(){
                     }
                 }
             }
-            if(tus === 'Delete'){
+            if(tus === 'Sil'){
                 tusSil();
             }
             if(harfKontrol(tus)){
