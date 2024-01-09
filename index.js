@@ -6978,15 +6978,8 @@ function klavyeHareketleriSanal(){
         })
         
     })
-    
-
 }
 
-function harfEkle2(harf){
-    
-    
-    
-}
 
 function kelimeGetir(){
     return state.grid[state.satirSayisi].reduce((onceki, sonraki) => onceki + sonraki);
@@ -7005,10 +6998,16 @@ function yerKontrol(tahmin){
 
         if(harf == state.secret[i]){
             kutu.classList.add('dogru');
+            let klavyeharf = document.getElementById(harf)
+            klavyeharf.classList.add('dogru');
         }else if(state.secret.includes(harf)){
             kutu.classList.add('yanlis');
+            let klavyeharf = document.getElementById(harf)
+            klavyeharf.classList.add('yanlis');
         }else{
             kutu.classList.add('bos');
+            let klavyeharf = document.getElementById(harf)
+            klavyeharf.classList.add('bos');
         }
     }
 
@@ -7049,6 +7048,5 @@ function main(){
 
     klavyeHareketleri();
     klavyeHareketleriSanal();
-    
 }
 main();

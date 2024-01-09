@@ -39,15 +39,15 @@ body{
     
 }
 
-.kutu.bos{
+.bos{
     background-color: var(--empty);
 }
 
-.kutu.yanlis{
+.yanlis{
     background-color: var(--wrong);
 }
 
-.kutu.dogru{
+.dogru{
     background-color: var(--true);
 }
 
