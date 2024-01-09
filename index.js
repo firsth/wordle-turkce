@@ -6952,6 +6952,7 @@ function klavyeHareketleriSanal(){
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             const tus = btn.innerText;
+            alert(tus)
             if(tus === 'Enter'){
                 if(state.sutunSayisi === 5){
                     const kelime = kelimeGetir();
