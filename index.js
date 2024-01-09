@@ -7017,10 +7017,10 @@ function yerKontrol(tahmin){
 
     if(kazanmaKontrol){
             var mesaj = document.getElementById("mesaj");
-            mesaj.innerHTML = `Tebrikler, doğru kelimeyi buldun. \n Doğru kelime: ${state.secret}`;
+            mesaj.innerHTML = `Tebrikler, doğru kelimeyi buldun. Doğru kelime: ${state.secret}`;
     }else if(bitisKontrol){
             var mesaj = document.getElementById("mesaj");
-            mesaj.innerHTML = `Doğru Kelime: ${state.secret} \n Mal orospu  cocugu nasıl bilemedin hahaha
+            mesaj.innerHTML = `Doğru Kelime: ${state.secret}
             `;
     }
 }
