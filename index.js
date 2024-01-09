@@ -6880,7 +6880,7 @@ let kelimeler = ['bekar','abadi',
 
 const state = {
 
-    secret: 'ahkam',
+    secret: kelimeler[Math.floor(Math.random() * kelimeler.length)],
     grid: Array(6)
         .fill()
         .map(() => Array(5).fill('')),
