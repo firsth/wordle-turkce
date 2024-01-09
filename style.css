@@ -47,3 +47,30 @@ body{
 .kutu.dogru{
     background-color: var(--true);
 }
+
+
+p a{
+    text-decoration: none;
+    color:bisque;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color:ghostwhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+}
+
+.baslik{
+    color:#538D4E;
+    left:0;
+    bottom:0;
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
