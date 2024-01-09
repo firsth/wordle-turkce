@@ -14,7 +14,11 @@ body{
 #oyun{
     display: grid;
     width: 100%;
+<<<<<<< HEAD
     height: 600px;
+=======
+    height: 550px;
+>>>>>>> 67027a9 (görsel düzenlemeler)
     place-items: center;
 }
 
@@ -70,12 +74,19 @@ p a{
 
 .baslik{
     color:#538D4E;
-    left:0;
-    bottom:0;
     width: 100%;
-    padding-top: 2rem;
     text-align: center;
     font-size: 1.5rem;
+    height: 60px;
+}
+
+.mesaj{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 20px;
+    color: whitesmoke;
 }
 
 .keyboard {
@@ -95,6 +106,7 @@ button {
     height: 50px;
     border-radius: .5rem;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 .delete,
 .enter {
@@ -118,14 +130,32 @@ button {
 @media only screen and (max-width: 600px) {
     .kutu{
         width: 50px;
+<<<<<<< HEAD
         height: 50px;
     }
     #oyun{
         height:450px;
+=======
+        height: 60px;
+        font-size: 2.2rem;
+    }
+
+    #oyun{
+        height: 450px;
+    }
+
+    .mesaj{
+        padding-bottom: 10px;
+>>>>>>> 67027a9 (görsel düzenlemeler)
     }
     button{
+<<<<<<< HEAD
         width: 24px;
         height: 54px;
+=======
+        width: 30px;
+        height: 40px;
+>>>>>>> 67027a9 (görsel düzenlemeler)
         margin: 2px;
         
         font-size: 20px;

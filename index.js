@@ -6934,7 +6934,8 @@ function klavyeHareketleri(){
                     state.sutunSayisi = 0;
                     state.satirSayisi++;
                 }else{
-                    alert('Kelime bulunamadı');
+                    var mesaj = document.getElementById("mesaj");
+                    mesaj.innerHTML = "Kelime Bulunamadı";
                 }
             }
         }
@@ -6961,7 +6962,8 @@ function klavyeHareketleriSanal(){
                         state.sutunSayisi = 0;
                         state.satirSayisi++;
                     }else{
-                        alert('Kelime bulunamadı');
+                        var mesaj = document.getElementById("mesaj");
+                        mesaj.innerHTML = "Kelime Bulunamadı";
                     }
                 }
             }
@@ -7014,11 +7016,12 @@ function yerKontrol(tahmin){
     const bitisKontrol = state.satirSayisi === 5;
 
     if(kazanmaKontrol){
-        alert("Kazandınız");
+            var mesaj = document.getElementById("mesaj");
+            mesaj.innerHTML = `Tebrikler, doğru kelimeyi buldun. \n Doğru kelime: ${state.secret}`;
     }else if(bitisKontrol){
-        alert(`Doğru Kelime: ${state.secret}
-        Mal orospu cocugu nasıl bilemedin hahaha
-        `);
+            var mesaj = document.getElementById("mesaj");
+            mesaj.innerHTML = `Doğru Kelime: ${state.secret} \n Mal orospu  cocugu nasıl bilemedin hahaha
+            `;
     }
 }
 
