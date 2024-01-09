@@ -109,8 +109,8 @@ button {
     font-size: 1rem;
     text-transform: capitalize;
 }
-.delete { width: 100px; }
-.enter { width: 70px; }
+.delete { width: 70px; }
+.enter { width: 100px; }
 
 .textarea {
     width: 100%;
@@ -146,11 +146,12 @@ button {
         font-size: 20px;
         padding: 0px;
     }
-
-    .delete,.enter{
+    .delete,
+    .enter {
+        font-size: 10px;
         width: 30px;
-       
     }
+    
     .enter{
         font-size: 10px;
     }
