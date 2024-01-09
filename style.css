@@ -72,7 +72,6 @@ p a{
     color:#538D4E;
     left:0;
     bottom:0;
-    height:100px;
     width: 100%;
     padding-top: 2rem;
     text-align: center;
@@ -119,12 +118,14 @@ button {
 @media only screen and (max-width: 600px) {
     .kutu{
         width: 50px;
-        height: 60px;
+        height: 50px;
     }
-
+    .oyun{
+        height:450px;
+    }
     button{
         width: 24px;
-        height: 40px;
+        height: 60px;
         margin: 2px;
         
         font-size: 20px;
