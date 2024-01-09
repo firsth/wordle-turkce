@@ -1,5 +1,6 @@
 
 let kelimeler = ['bekar','abadi',
+'kelam',
 'abala',
 'abalı',
 'abani',
