@@ -6874,7 +6874,7 @@ const buttons = document.querySelectorAll('.btn')
 
 const state = {
 
-    secret: 'şakir',
+    secret: kelimeler[Math.floor(Math.random() * kelimeler.length)],
     grid: Array(6)
         .fill()
         .map(() => Array(5).fill('')),
