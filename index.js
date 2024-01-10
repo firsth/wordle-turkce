@@ -1,7 +1,9 @@
 
-let kelimeler = ['abadi',
+let kelimeler = [
+    'abadi',
 'abala',
 'kelam',
+'selam',
 'abalı',
 'abani',
 'abaşo',
@@ -6867,11 +6869,12 @@ let kelimeler = ['abadi',
 'zülüf',
 ]
 
+
 const buttons = document.querySelectorAll('.btn')
 
 const state = {
 
-    secret: kelimeler[Math.floor(Math.random() * kelimeler.length)],
+    secret: 'şakir',
     grid: Array(6)
         .fill()
         .map(() => Array(5).fill('')),
@@ -6980,19 +6983,42 @@ function kelimeKontrol(kelime){
 
 function yerKontrol(tahmin){
     const satir = state.satirSayisi;
-
+    let yanlisYerSayisi = 0;
+    for(var i = 0; i<5; i++){
+        
+        const kutu = document.getElementById(`kutu${satir}${i}`);
+        const harf = kutu.textContent;
+        if (state.secret.includes(harf)) {
+            const harf = kutu.textContent;
+            if (harf == state.secret[i]) {
+                
+            } else {
+                
+                yanlisYerSayisi++;
+            }
+        }
+    }
+    let boyananKutu = 0;
     for(let i = 0; i < 5; i++){
         const kutu = document.getElementById(`kutu${satir}${i}`);
         const harf = kutu.textContent;
+        
 
         if(harf == state.secret[i]){
             kutu.classList.add('dogru');
             let klavyeharf = document.getElementById(harf)
             klavyeharf.classList.add('dogru');
         }else if(state.secret.includes(harf)){
-            kutu.classList.add('yanlis');
             let klavyeharf = document.getElementById(harf)
-            klavyeharf.classList.add('yanlis');
+                klavyeharf.classList.add('yanlis');
+            boyananKutu++;
+            console.log("yanlış yer:"+yanlisYerSayisi+"boyanan yer:"+boyananKutu);
+            if(yanlisYerSayisi > boyananKutu){
+                kutu.classList.add('yanlis');   
+            }else{
+                kutu.classList.add('bos');
+            }
+            
         }else{
             kutu.classList.add('bos');
             let klavyeharf = document.getElementById(harf)
